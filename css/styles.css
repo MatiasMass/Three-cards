@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Heebo', sans-serif;
+    font-size: 16px;
+}
+
+.container{
+    width: 70%;
+    margin: 100px auto;
+}
+
+.cards{
+    display: flex;
+}
+
+.card{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.sedan {
+    background: orange;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.suvs{
+    background: #016972;
+}
+
+.luxury{
+    background: #00403f;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.title{
+    text-transform: uppercase;
+    font-size: 25px;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+.paragraph{
+    font-size: 14px;
+    margin-bottom: 100px;
+}
+
+.btn {
+    cursor: pointer;
+    padding: 10px 25px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    align-self: center;
+}
+
+.btn:hover{
+    background: #fff;
+}
+
+.sedan-btn:hover{
+    color: orange;
+}
+
+.suvs-btn:hover{
+    color: #016972;
+}
+
+.luxury-btn:hover{
+    color: #00403f;
+}
+
+@media (max-width: 800px){
+    
+    .cards{
+        flex-direction: column;
+    }
+
+    .sedan {
+        background: orange;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 0;
+    }
+
+    .luxury{
+        background: #00403f;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-top-right-radius: 0px;
+    }
+    
+
+    .btn{
+        align-self: flex-start;
+    }
+}
